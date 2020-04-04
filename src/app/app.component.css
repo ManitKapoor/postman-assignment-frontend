@@ -1,0 +1,10 @@
+#app-body {
+    min-height: 400px;
+}
+footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: auto;
+    width: 100%;
+}

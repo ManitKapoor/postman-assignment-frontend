@@ -1,0 +1,54 @@
+<nav class="blue darken-2">
+
+    <div class="container-fluid">
+      <div class="nav-wrapper ">
+        <a  class="brand-logo paddingFix"><i class="material-icons brand-icon">assignment</i>Assignment</a>
+        <div id="auth-component" *ngIf="auth.hasTokenLoaded()">
+        <a data-activates="side-nav" class="button-collapse show-on-large right cursor hoverable">
+          <i class="material-icons">menu</i>
+        </a>
+        <ul class="right hide-on-med-and-down">
+          <li routerLink="/dashboard" routerLinkActive="active">
+            <a >Dashboard</a>
+          </li>
+          <li routerLink="/assignment" routerLinkActive="active">
+            <a >Assignment</a>
+          </li>
+        </ul>
+        <!-- Side nav -->
+        <ul id="side-nav" class="side-nav" *ngIf="userData">
+          <li>
+            <div class="user-view">
+              <div class="background">
+                <img src="assets/img/ocean.jpg" alt="" />
+              </div>
+              <a >
+                <img src="assets/img/png/{{userData.imageUrl}}.png" alt="" class="circle" />
+              </a>
+              <a >
+                <span class="name white-text">{{userData.name}}</span>
+              </a>
+              <a >
+                <span class="email white-text">{{userData.email}}</span>
+              </a>
+            </div>
+          </li>
+          <li>
+            <a routerLink="/dashboard" >
+              <i class="material-icons">dashboard</i> Dashboard</a>
+          </li>
+          <li>
+            <div class="divider"></div>
+          </li>
+          <li>
+            <a class="subheader">Account Controls</a>
+          </li>
+          <li>
+            <a class="waves-effect" (click)="logout()" >Logout</a>
+          </li>
+        </ul>
+        </div>
+      </div>
+    </div>
+
+</nav>

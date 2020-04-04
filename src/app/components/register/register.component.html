@@ -1,0 +1,24 @@
+<section class="section section-login">
+    <div class="container">
+      <div class="row">
+        <div class="col s12 m8 offset-m2 l6 offset-l3">
+          <div class="card-panel login grey lighten-4 center">
+            <h4>Join Now!</h4>
+            <form [formGroup]="registerForm">
+              <div class="input-field">
+                <i class="material-icons prefix marginSet">email</i>
+                <input type="email" id="email" formControlName="email" >
+                <label class="black-text" for="email" >Email</label>
+              </div>
+              <div class="input-field">
+                <i class="material-icons prefix marginSet">lock</i>
+                <input type="password" id="password" formControlName="password">
+                <label class="black-text" for="password" >Password</label>
+              </div>
+              <button (click)="register()" class="waves-effect btn btn-large btn-extended blue lighten-2" >Register</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>

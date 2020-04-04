@@ -1,0 +1,40 @@
+<section class="section section-visitors">
+    <div class="container">
+      <div class="row">
+        <!-- Latest Comments -->
+        <ul class="collection with-header latest-comments">
+          <li class="collection-header">
+            <h5>Notes</h5>
+          </li>
+          <li class="collection-item avatar">
+            <img src="assets/img/manit1.jpg" alt="" class="circle">
+            <span class="title">Manit Kapoor</span>
+            <p class="truncate">Your looking at the main assignment</p>
+          </li>
+          <li class="collection-item avatar">
+            <img src="assets/img/manit1.jpg" alt="" class="circle">
+            <span class="title">Manit Kapoor</span>
+            <p class="truncate">The active users are shown below on the right side</p>
+          </li>
+          <li class="collection-item avatar">
+            <img src="assets/img/manit1.jpg" alt="" class="circle">
+            <span class="title">Manit Kapoor</span>
+            <p class="truncate">The users with assignment role can only this view</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+<div class="fixed-action-btn horizontal click-to-toggle active">
+    <a class="btn-floating btn-large green lightn-1">
+      <i class="large material-icons">supervisor_account</i>
+    </a>
+    <ul >
+      <li className="userImage" *ngFor="let user of users; index as i">
+        <a className="btn-floating green darken-1">
+          <img src="assets/img/png/{{user.charAt(0).toLocaleUpperCase()}}.png" class="personImage" />
+        </a>
+      </li>
+    </ul>
+</div>
