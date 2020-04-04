@@ -1,4 +1,4 @@
-# Postman AssignmentFrontend
+# Postman Assignment Frontend
 This postman assignment frontend which uses firebase for authentication and spring boot backend.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.0.
